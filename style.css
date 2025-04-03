@@ -1,0 +1,152 @@
+/*Geral*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-contact button:hover{
+    box-shadow: 3px 3px 10px #87CEEB;
+    transition: .4s;
+    transform: scale3d(1.2);
+}
+
+body{
+    background: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width:1080px ;
+    margin:0 auto;
+}
+
+
+.flexbox{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* border: 3px red solid; */
+}
+
+
+/* Header style */
+header{
+    padding:15px 3%;
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+
+
+header a{
+    color:#E0F7FA;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header a:hover{
+    display: inline-block;
+    color:#6d797a;
+    transform: scale(0.9);
+    transition: .4s;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding:35px;  
+}
+
+header .button-contact button{
+    color: #E0F7FA;
+    padding:0px 20px;
+    font-size: 18px;
+    background-color: #00000069;
+    font-weight: 300;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    border:1px solid #87CEEB
+}
+
+
+
+.logo img{
+    width: 150px;
+    height: auto;
+}
+
+/*Main style*/
+
+section.top-site{
+    padding: 35px 5%;
+}
+
+
+section.top-site .flexbox{
+    color: #E0F7FA;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+}
+
+.top-site h1{
+    justify-self: center;
+    font-size: 42px;
+    color:#4169E1 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 60px;
+    padding: 10px;
+}
+
+.top-site .txt-top-site h1 span{
+    color: #00b1f7;
+}
+
+.top-site .txt-top-site p{
+    padding: 35px 5%;
+    align-items: center;
+}
+
+.profile img{
+    width:250px;
+    height: auto;
+    border-radius: 50%;
+}
+
+main .button-contact button{
+    color: #E0F7FA;
+    margin-left: 35px;
+    padding:0px 20px;
+    font-size: 18px;
+    background-color: #00000069;
+    font-weight: 300;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    border:1px solid #87CEEB
+}
+    
+/* .top-site .profile img{
+    position:relative;
+    animation:floater 2s ease-in-out infinite alternate;
+}
+@keyframes floater{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px
+    }
+} */
