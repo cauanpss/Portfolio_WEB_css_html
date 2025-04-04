@@ -282,16 +282,17 @@ section.about-me .flexbox{
     
 }
 
+.about-me-text .social-button button{
+    position: relative;
+    animation: floater 2s ease-in-out infinite alternate;
+}
+
 .about-me-text .social-button button:hover{
     box-shadow: 0px 0px 8px #71d3fa;
     transform: scale(1.2);
     transition: 0.4s;
 }
 
-.about-me-text .social-button button{
-    position: relative;
-    animation: floater 2s ease-in-out infinite alternate;
-}
 
 @keyframes floater{
     0%{
@@ -316,19 +317,19 @@ section.projects .interface h2 span{
 section.projects .flexbox{
     justify-content:space-around;
     align-items: center;
-    border: 2px solid rgb(255, 0, 157)
+    /* border: 2px solid rgb(255, 0, 157) */
 }
 
 
 .project-image{
     border-radius: 50px;
-    border: 3px solid #00b0f5;
     width: 300px;
     height: 400px;
     background-size: cover;
     background-position: 100% 0%;
     transition: 8s;
     cursor:pointer;
+    /* border: 3px solid #00b0f5; */
 }
 
 .project-image:hover{
@@ -367,4 +368,141 @@ section.projects .flexbox{
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.801);
     opacity:1
+}
+
+/*Formulary style*/
+
+section.formulary{
+    padding:50px 5%;
+}
+
+form{
+    display: flex;
+    max-width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px
+}
+
+input{
+    color: #87CEEB;
+    background-color: #010c3081;;
+}
+
+form input::placeholder{
+    color:#87CEEB;
+}
+
+form input, form textarea{
+    
+    border: 0;
+    border-radius: 15px;
+    box-shadow: 0 0 8px#71d3fa85;
+    outline: 0;
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #010c3081;
+}
+
+form textarea{
+    color:#87CEEB;
+    overflow: hidden;
+    box-sizing: border-box;
+    resize: none;
+    height: 150px;
+    
+}
+
+form textarea::placeholder{
+    color:#87CEEB;
+}
+
+form .submit-button{
+    margin-top: 15px;
+    text-align: center;
+}
+
+form .submit-button input{
+    color: #E0F7FA;
+    padding:0px 20px;
+    font-size: 18px;
+    background-color: #00000069;
+    font-weight: 300;
+    border-radius: 12px;
+    border: 0;
+    cursor: pointer;
+    border:1px solid #87CEEB;
+    width: 140px;
+}
+
+form .submit-button input:hover{
+    
+    width: 140px;
+    box-shadow: 3px 3px 10px #87CEEB;
+    transition: .4s;
+    transform: scale(1.2);
+}
+
+/*Baseboard style*/
+
+footer{
+    padding: 50px 5%;
+    box-shadow: 0 0 35px#71d3fa85;
+
+}
+
+footer .flexbox{
+    justify-content: space-between;
+}
+
+
+.logo-footer img{
+    width: 80px;
+    height: auto;
+}
+
+.footer-line .social-button button{
+    border-radius: 50%;
+    width: 50px;;
+    height: 50px;
+    border:1px solid black;
+    font-size:28px;
+    background-color: #87CEEB;  
+    cursor: pointer;  
+    
+}
+
+.footer-line .social-button button:hover{
+    box-shadow: 0px 0px 8px #71d3fa;
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+
+.footer-line p i{
+    margin-left: 5px;
+    font-size: 30px;
+    padding: 15px;
+    color:#87CEEB;
+}
+
+.footer-line p a{
+    color:#87CEEB;
+
+}
+
+@media screen and (max-width: 1020px){
+
+    /*Geral*/
+    .flexbox{
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    /*header*/
+    .menudesktop{
+        display:none;
+    }
+
 }
