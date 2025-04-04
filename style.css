@@ -501,8 +501,82 @@ footer .flexbox{
         
     }
     /*header*/
-    .menudesktop{
+    .menu-desktop{
         display:none;
     }
 
+    /*Main style*/
+
+    .top-site h1{
+        font-size: 30px;
+    }
+
+    section.top-site{
+        padding: 10px 5%;
+    }
+    
+    
+    /*Habilitys style*/
+    
+    section.tech-habilitys{
+        padding:10px 5%
+    }
+
+    
+    .tech-habilitys .hability-box{
+    margin-top: 5px;
+    height: 50%;
+    }
+
+    /*About-me style*/
+    
+    .about-me .about-me-text h2{
+        font-size: 38px;
+    }
+
+    .about-me .about-me-text span{
+        color:#4169E1;
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 20px;
+        /* border: 2px solid greenyellow; */
+    }
+
+    .about-me-image img{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-me-text .social-button{
+        justify-content: center;
+    }
+
+    /*projects style*/
+    section.projects{
+        padding: 60px;
+    }
+
+    .project-image{
+        border-radius: 50px;
+        width: 100%px;
+        height: 400px;
+        
+    }
+
+    .project-image:hover{
+        background-position: 50% 0%;
+    }
+
+    section.projects .flexbox{
+        gap:20px
+    }
+
+    /*footer style*/
+    footer .flexbox{
+        flex-direction: column;
+    }
+    
+    .footer-line{
+        padding: 15px;
+    }
 }
